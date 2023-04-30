@@ -1,0 +1,25 @@
+{
+  "name": "simple-nodeapp-withdocker",
+  "version": "1.0.0",
+  "description": "example of using node app as server and create a docker image for it and run it in a container",
+  "main": "index.js",
+  "scripts": {
+    "run_": "node myapp.js",
+    "docker_image": "docker build -t app1:1 .",
+    "docker_container": "docker run -it -p 3000:3000 app1:1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manar-alkull/simple-nodeApp-withDocker.git"
+  },
+  "author": "Manar K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manar-alkull/simple-nodeApp-withDocker/issues"
+  },
+  "homepage": "https://github.com/manar-alkull/simple-nodeApp-withDocker#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
